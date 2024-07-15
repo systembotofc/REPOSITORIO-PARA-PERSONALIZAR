@@ -15,15 +15,19 @@ let msg = generateWAMessageFromContent(m.chat, {
             text: ""
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "> 𝘾𝙧𝙚𝙖𝙙𝙤𝙧: 𝘈𝘯𝘨𝘦𝘭𝘪𝘵𝘰\n> 𝙑𝙚𝙧𝙨𝙞𝙤𝙣:  _3.3.1_\n> 𝙄𝙜: @𝘶𝘴𝘹𝘳_𝘢𝘯𝘨𝘦𝘭𝘪𝘵𝘰\n> 𝙒𝙖: wa.me/59897246324\n> 𝘚𝘪 𝘩𝘢𝘺 𝘢𝘭𝘨𝘶𝘯 𝘦𝘳𝘳𝘰𝘳 𝘳𝘦𝘱𝘰𝘳𝘵𝘦𝘭𝘰 𝘢𝘭 𝘤𝘳𝘦𝘢𝘥𝘰𝘳 𝘤𝘰𝘯 𝘦𝘭 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 #𝙧𝙚𝙥𝙤𝙧𝙩𝙚 𝘱𝘢𝘳𝘢 𝘴𝘰𝘭𝘶𝘤𝘪𝘰𝘯𝘢𝘳𝘭𝘰\n\n> GRACIAS 🫶🏻"
+            text: "> 𝘾𝙧𝙚𝙖𝙙𝙤𝙧: Benja\n> 𝙑𝙚𝙧𝙨𝙞𝙤𝙣:  _3.3.1_\n> 𝙄𝙜: @boybenjx7\n> 𝙒𝙖: wa.me/51936732723\n> 𝘚𝘪 𝘩𝘢𝘺 𝘢𝘭𝘨𝘶𝘯 𝘦𝘳𝘳𝘰𝘳 𝘳𝘦𝘱𝘰𝘳𝘵𝘦𝘭𝘰 𝘢𝘭 𝘤𝘳𝘦𝘢𝘥𝘰𝘳 𝘤𝘰𝘯 𝘦𝘭 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 #𝙧𝙚𝙥𝙤𝙧𝙩𝙚 𝘱𝘢𝘳𝘢 𝘴𝘰𝘭𝘶𝘤𝘪𝘰𝘯𝘢𝘳𝘭𝘰\n\n> GRACIAS 🫶🏻"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-            title: "🔮 𝙃𝙤𝙡𝙖 𝙨𝙤𝙮 𝙓𝙞𝙖𝘽𝙤𝙩-𝙋𝙧𝙤",
+            title: "𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏",
             subtitle: "",
             hasMediaAttachment: false
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\".owner\",\"id\":\"message\"}"
+              },
               {
                 "name": "quick_reply",
                 "buttonParamsJson": "{\"display_text\":\".allmenu\",\"id\":\"message\"}"
