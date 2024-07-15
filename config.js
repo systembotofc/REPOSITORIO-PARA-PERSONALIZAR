@@ -10,9 +10,9 @@ import moment from 'moment-timezone';
 global.botnumber = ""
 
 global.owner = [
-  ['59168683798', '𝘾𝙧𝙚𝙖𝙙𝙤𝙧 🔮', true],
-  ['5493585753625', '𝘾𝙤𝙡𝙖𝙗...🔮', true],
-  ['', '', true],
+  ['51936732723', '𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏', true],
+  ['51936732723', '𝘾𝙍𝙀𝘼𝘿𝙊𝙍', true],
+  ['51936732723', '𝙎𝙊𝙋𝙊𝙍𝙏𝙀', true],
   ['', '', true],
   ['', '', true],
   ['', '', true],
@@ -32,16 +32,16 @@ global.owner = [
   ['']
 ];
 
-global.suittag = ['59168683798'];
-global.prems = ['59168683798'];
+global.suittag = ['51936732723'];
+global.prems = ['51936732723'];
 
-global.packname = '𝙓𝙄𝘼 𝘽𝙊𝙏 𝙋𝙍𝙊';
-global.author = '𝙓𝙄𝘼 𝘽𝙊𝙏 𝙋𝙍𝙊';
-global.wm = '𝙓𝙄𝘼 𝘽𝙊𝙏 𝙋𝙍𝙊';
-global.titulowm = '𝙓𝙄𝘼 𝘽𝙊𝙏 𝙋𝙍𝙊';
-global.titulowm2 = `𝙓𝙄𝘼 𝘽𝙊𝙏 𝙋𝙍𝙊`
-global.igfg = '𝙓𝙄𝘼 𝘽𝙊𝙏 𝙋𝙍𝙊';
-global.wait = '𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤... 🔮';
+global.packname = '𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏';
+global.author = '𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏';
+global.wm = '𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏';
+global.titulowm = '𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏';
+global.titulowm2 = `𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏`
+global.igfg = '𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏';
+global.wait = '𝙐𝙣 𝙢𝙤𝙢𝙚𝙣𝙩𝙤...';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -61,19 +61,19 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `▸ ${dia} ${fecha}\n▸ XiaBot`;
-global.gt = '𝙓𝙄𝘼 𝘽𝙊𝙏 𝙋𝙍𝙊';
-global.mysticbot = '𝙓𝙄𝘼 𝘽𝙊𝙏 𝙋𝙍𝙊';
-global.md = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6';
-global.mysticbot = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6';
-global.canalbot = 'https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y';
-global.ig = 'https://www.instagram.com/usxr_angelito';
-global.github = 'https://github.com/Karim-off/XiaBot-Pro';
-global.gtb = 'https://github.com/Karim-off';
-global.waitt = '𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤... 🔮';
-global.waittt = '𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤... 🔮';
-global.waitttt = '𝘾𝙖𝙧𝙜𝙖𝙣𝙙𝙤... 🔮';
-global.nomorown = '59168683798';
+global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏`;
+global.gt = '𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏';
+global.mysticbot = '𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏';
+global.md = 'https://chat.whatsapp.com/C0WHVT1wectIMBxcf3h96q';
+global.mysticbot = 'https://chat.whatsapp.com/C0WHVT1wectIMBxcf3h96q';
+global.canalbot = 'https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u';
+global.ig = 'https://www.instagram.com/boybenjx7';
+global.github = 'https://github.com';
+global.gtb = 'https://github.com';
+global.waitt = '𝙐𝙣 𝙢𝙤𝙢𝙚𝙣𝙩𝙤...';
+global.waittt = '𝙐𝙣 𝙢𝙤𝙢𝙚𝙣𝙩𝙤...';
+global.waitttt = '𝙐𝙣 𝙢𝙤𝙢𝙚𝙣𝙩𝙤...';
+global.nomorown = '51936732723';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
