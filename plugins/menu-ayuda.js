@@ -1,5 +1,8 @@
 import pkg from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto } = pkg
+const pp = imagen1;
+// let vn = './media/menu.mp3'
+const img = './Menu2.jpg';
 
 var handler = async (m, { conn, usedPrefix }) => {
 
