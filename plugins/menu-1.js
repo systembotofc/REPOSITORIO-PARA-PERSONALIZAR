@@ -84,4 +84,19 @@ var handler = async (m, { conn, usedPrefix }) => {
                 "buttonParamsJson": "{\"display_text\":\".𝘍𝘢𝘯𝘵𝘢𝘴𝘮𝘢𝘴\",\"id\":\"message\"}"
               },
               {
-                "name
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\".𝘒𝘪𝘤𝘬𝘧𝘢𝘯𝘵𝘢𝘴𝘮𝘢𝘴\",\"id\":\"message\"}"
+              }
+           ],
+          })
+        })
+    }
+  }
+}, {})
+
+await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
+
+}
+handler.command = /^(menu1|help1|ayuda1)$/i
+
+export default handler
