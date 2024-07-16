@@ -1,11 +1,10 @@
 import pkg from '@whiskeysockets/baileys';
-const { generateWAMessageFromContent, proto } = pkg
+const { generateWAMessageFromContent, proto } = pkg;
 
 var handler = async (m, { conn, usedPrefix }) => {
-
-let msg = generateWAMessageFromContent(m.chat, {
-  viewOnceMessage: {
-    message: {
+  let msg = generateWAMessageFromContent(m.chat, {
+    viewOnceMessage: {
+      message: {
         "messageContextInfo": {
           "deviceListMetadata": {},
           "deviceListMetadataVersion": 2
@@ -20,7 +19,11 @@ let msg = generateWAMessageFromContent(m.chat, {
           header: proto.Message.InteractiveMessage.Header.create({
             title: "𝙈𝙄𝙆𝘼𝙎𝘼 𝘽𝙊𝙏",
             subtitle: "",
-            hasMediaAttachment: false
+            hasMediaAttachment: true,
+            mediaAttachment: {
+              url: "https://th.bing.com/th/id/OIG2.6DYzgwS1ijLpt6wLkkQm?w=1024&h=1024&rs=1&pid=ImgDetMain",
+              type: proto.Message.MediaAttachmentType.IMAGE
+            }
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [
@@ -81,19 +84,4 @@ let msg = generateWAMessageFromContent(m.chat, {
                 "buttonParamsJson": "{\"display_text\":\".𝘍𝘢𝘯𝘵𝘢𝘴𝘮𝘢𝘴\",\"id\":\"message\"}"
               },
               {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘒𝘪𝘤𝘬𝘧𝘢𝘯𝘵𝘢𝘴𝘮𝘢𝘴\",\"id\":\"message\"}"
-              }
-           ],
-          })
-        })
-    }
-  }
-}, {})
-
-await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
-
-}
-handler.command = /^(menu1|help1|ayuda1)$/i
-
-export default handler
+                "name
