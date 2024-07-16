@@ -21,82 +21,23 @@ var handler = async (m, { conn, usedPrefix }) => {
             subtitle: "",
             hasMediaAttachment: true,
             mediaAttachment: {
-              url: "https://th.bing.com/th/id/OIG2.6DYzgwS1ijLpt6wLkkQm?w=1024&h=1024&rs=1&pid=ImgDetMain",
+              url: "file:///home/container/src/Menugrupo/image.png", // Cambia la ruta a la ubicación correcta de tu imagen
               type: proto.Message.MediaAttachmentType.IMAGE
             }
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons: [
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\"https://whatsapp.com/channel/0029VajUEsCB4hdNTg04zh1u\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘔𝘦𝘯𝘶𝘧𝘧\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘊𝘰𝘮𝘢𝘯𝘥𝘰𝘴𝘧𝘧\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘒𝘪𝘤𝘬\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘎𝘳𝘶𝘱𝘰\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘗𝘳𝘰𝘮𝘰𝘵𝘦\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘋𝘦𝘮𝘰𝘵𝘦\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘓𝘪𝘯𝘬\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘛𝘰𝘥𝘰𝘴\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘚𝘦𝘵𝘸𝘦𝘭𝘤𝘰𝘮𝘦\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘚𝘦𝘵𝘣𝘺𝘦\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘕𝘰𝘵𝘪𝘧𝘺\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".Tag\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘍𝘢𝘯𝘵𝘢𝘴𝘮𝘢𝘴\",\"id\":\"message\"}"
-              },
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".𝘒𝘪𝘤𝘬𝘧𝘢𝘯𝘵𝘢𝘴𝘮𝘢𝘴\",\"id\":\"message\"}"
-              }
-           ],
+              // ... (botones existentes)
+            ]
           })
         })
+      }
     }
-  }
-}, {})
+  }, {});
 
-await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
+  await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id });
+};
 
-}
-handler.command = /^(menu1|help1|ayuda1)$/i
+handler.command = /^(menu1|help1|ayuda1)$/i;
 
-export default handler
+export default handler;
