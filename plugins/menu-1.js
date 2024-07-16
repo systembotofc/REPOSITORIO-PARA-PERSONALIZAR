@@ -21,7 +21,7 @@ var handler = async (m, { conn, usedPrefix }) => {
             subtitle: "",
             hasMediaAttachment: true,
             mediaAttachment: {
-              url: "file:///home/container/src/Menugrupo/image.png", // Cambia la ruta a la ubicación correcta de tu imagen
+              url: "./src/Menugrupo.png", // Cambia la ruta a la ubicación correcta de tu imagen
               type: proto.Message.MediaAttachmentType.IMAGE
             }
           }),
